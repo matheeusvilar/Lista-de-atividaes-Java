@@ -5,19 +5,23 @@ public class Exercicio2 {
     public static void main(String[] args) {
         Scanner ler  = new Scanner(System.in);
 
-        int n;
+        int number;
 
         System.out.println("Infome um numero para saber se seu numero é impar, par, positivo ou negativo.");
-        n = ler.nextInt();
+        number = ler.nextInt();
 
-        if (n %2 == 0){
+        if (number %2 == 0){
             System.out.println("Seu numero é par");
-        }else if (n %2 == 1){
+        }else if (number %2 == 1){
             System.out.println("Seu numero é impar");
-        }else if (n < -1){
+        }
+
+        if (number < 0){
             System.out.println("Seu numero é negativo");
-        }else if (n > 1){
-            System.out.println("Seu numero é positvo");
+        }else if (number > 0 ){
+            System.out.println("Seu numero é positivo");
+        }else{
+            System.out.println("O numero é zero");
         }
 
     }
